@@ -1,0 +1,140 @@
+.trending-area{
+    .trending-main{
+        border-bottom: 1px solid #eeeeee;
+        
+    // trending top
+    .trending-top{
+        .trend-top-img{
+            overflow: hidden;
+            position: relative;
+            border-radius: 7px;
+            &::before{
+                position: absolute;
+                width: 100%;
+                height: 50%;
+                bottom: 0;
+                content: "";
+                @extend %gallery;
+            }
+            img{
+                width: 100%;
+            }
+            .trend-top-cap{
+                position: absolute;
+                bottom: 25px;
+                left: 31px;
+                @media #{$xs}{
+                    bottom: -2px;
+                    left: 5px;
+                }
+                span{
+                    color: $heading-color;
+                    padding: 7px 14px;
+                    border-radius: 5px;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    font-size: 10px;
+                    line-height: 1;
+                    margin-bottom: 19px;
+                    display: inline-block;
+                    color: #fff;
+                    overflow: hidden;
+
+                }
+                h2{
+                    font-size: 40px;
+                    font-weight: 800;
+                    overflow: hidden;
+                    @media #{$sm}{
+                        font-size: 30px;
+                    }
+                    @media #{$xs}{
+                        font-size: 15px;
+                    }
+                   a{
+                        display: block;
+                        color: #fff;
+                        line-height:1.3;
+                        &:hover{
+                            color: #f75a5a;
+                        }
+                   }
+                }
+                p{
+                    color: #c2c2c2;
+                    font-size: 12px;
+                    overflow: hidden;
+                }
+                &.trend-top-cap2{
+                    bottom: 0px;
+                    h2{
+                        font-size: 24px;
+                        font-weight: 800;
+                        @media #{$sm}{
+                            font-size: 15px;
+                        }
+                        @media #{$xs}{
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+     // trending Bottom
+    .trending-bottom{
+        .single-bottom{
+            .trend-bottom-img{
+                overflow: hidden;
+                img{
+                    width: 100%;
+                    border-radius: 5px;
+                    transform: scale(1);
+                    transition: all 0.5s ease-out 0s;
+                }
+            }
+            .trend-bottom-cap{
+                span{
+                    color: $heading-color;
+                    text-transform: uppercase;
+                    font-size: 11px;
+                    font-weight: 400;
+                   // background: #ffe7e6;
+                    padding: 10px 15px;
+                    line-height: 1;
+                    margin-bottom: 15px;
+                    display: inline-block;
+                }
+                h4{      
+                    font-size: 18px; 
+                    @media #{$lg}{
+                        font-size: 16px;
+                    }           
+                    a{
+                        
+                        font-weight: 500;
+                        line-height:1.4;
+                        &:hover{
+                            color: $theme-color;
+                        }
+                    }
+                }
+            }
+        }
+    
+    }
+  }
+}
+// Hover Effect
+.trend-top-img:hover{
+    img{
+        // transform: scale(1.1);
+    }
+}
+
+.single-bottom:hover{
+    .trend-bottom-img img{
+        transform: scale(1.1);
+    }
+}
+

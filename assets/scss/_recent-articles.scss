@@ -1,0 +1,83 @@
+.recent-articles{
+        .recent-wrapper{
+            margin-bottom: 23px;
+        }
+
+        .single-recent{
+            position: relative;
+            margin-left: 15px;
+            margin-right: 15px;
+            .what-img{
+                img{
+                    border-radius: 6px;
+                    width: 100%;
+                }
+            }
+            .what-cap{
+                padding: 20px 20px 10px 10px;
+                background:#fff;
+                position: absolute;
+                bottom: 0px;
+                left: 0;
+                width: 80%;
+                border-radius:0  7px 0 0;
+                @include transition(.4s);
+                h4{  
+                    font-size: 18px;
+                    @media #{$lg}{
+                        font-size: 16px;
+                    }                 
+                    @media #{$xs}{
+                        font-size: 13px;
+                    }                 
+                    a{ 
+                        font-weight: 700;
+                        line-height:1.4;
+                        &:hover{
+                            color: $theme-color;
+                        }
+                    }
+                }
+            }
+            P{
+                font-size: 11px;
+                font-weight: 600;
+                margin-bottom: 0px;
+                display: inline-block;
+            }
+            // icon
+            span{
+                color: #7a8496;
+                position: absolute;
+                right: 20px;
+                bottom: 2px;
+                font-size: 30px; 
+                cursor: pointer;
+                // btn Animated Style
+            }
+        }
+        .slick-arrow {
+            background: none;
+            border: none;
+            position: absolute;
+            bottom: -87px;
+            text-align: center;
+            left: 0;
+            right: -85px;
+            margin: auto;
+            font-size: 46px;
+            cursor: pointer;
+            color: #ff0b0b;
+            @include transition(.4s);
+          
+        } 
+        .slick-prev.slick-arrow {
+            transform: rotate(180deg);
+            left: -172px;
+            color: #ddd;
+            &:hover{
+                color: red;
+            }
+        }
+    
+}

@@ -1,0 +1,59 @@
+.about-area2{
+    .about-right{
+        .about-img{
+            img{
+                width: 100%;
+            }
+        }
+        .about-prea{
+            p{
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+.support-company-area{
+    .support-location-img{
+        img{
+            width: 100%;
+        }
+	}
+	// Right Content
+	.right-caption{
+		position: relative;
+		right: -50px;
+		@media #{$lg}{
+			right: -25px;
+		}
+		@media #{$md}{
+			right: 0px;
+			margin-bottom: 40px;
+			padding-top: 50px;
+		}
+		@media #{$sm}{
+			right: 0px;
+			margin-bottom: 40px;
+			padding-top: 50px;
+		}
+		@media #{$xs}{
+			right: 0px;
+			margin-bottom: 40px;
+			padding-top: 50px;
+		}
+
+		.support-caption{
+			p.pera-top{
+				font-size: 20px;
+				font-weight: 500;
+				color: #fff;
+				font-family: $font_1;
+			}
+			p{
+				font-size: 15px;
+				color: #fff;
+				
+			}
+		}
+	}
+}

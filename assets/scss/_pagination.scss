@@ -1,0 +1,33 @@
+
+
+// Pagination Area
+.pagination-area{
+    .page-item {
+        margin: 0;
+    }
+    .page-item:first-child {margin: 0;}
+    .page-link {
+        color: #777777;
+        border:0;
+        font-size: 15px;
+        text-align: center;
+        background: none;
+        padding: 0 10px;
+        box-shadow: none;
+        outline: 0;
+    }
+    .page-link:hover {
+        color:$theme-color;
+    }
+    .page-item.active .page-link {
+        z-index: 1;
+        color: #000;
+        background: none;
+        border: 0;
+        box-shadow: none;
+        outline: 0;
+        &:hover{
+            color: $theme-color;
+        }
+    }
+}

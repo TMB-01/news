@@ -1,0 +1,107 @@
+.footer-area{
+    background: #070b11;
+    .single-footer-caption{
+        .footer-logo{
+            margin-bottom:30px;
+        }
+        .footer-pera{
+             .info1{
+                line-height: 1.8;
+                margin-bottom: 35px;
+                padding-right: 5px;
+                color: #9fa6bd;
+                font-size: 14px;
+            }.info2{
+                margin-bottom: 15px;
+                color: #9fa6bd;
+                font-size: 14px;
+            } 
+            &.footer-pera2 p{
+                line-height: 1.9;
+                padding: 0;
+                color: #9fa6bd;
+                font-size: 14px;
+            }
+        }
+        .footer-tittle{
+            & h4{
+                color: #fff;
+                font-family:$font_2;
+                font-size: 22px;
+                margin-bottom: 38px;
+                font-weight: 700;
+                text-transform: normal;
+            }
+        }
+        .banner{
+            img{
+                width: 100%;
+            }
+        }
+        .whats-right-single{
+            display: flex;
+        align-items: center;
+            .whats-right-img{
+                img{
+                    border-radius: 6px;
+                }
+            }
+            .whats-right-cap{
+                padding-left: 18px;
+                h4{     
+                    font-size: 16px;
+                    font-weight: 700;
+                    @media #{$lg}{
+                        font-size:15px;
+                    }
+                    a{
+                        font-weight: 500;
+                        line-height:1.4;
+                        color: #fff;
+                        &:hover{
+                            color: $theme-color;
+                        }
+                    }
+                }
+                p{
+                    color:#707b8e;
+                    font-size: 12px;
+                    margin: 0;
+                    line-height: 1;
+                }
+            }
+        }
+    }
+}
+//copy Right 
+.footer-bottom-area {
+    background: #000000;
+    .footer-border{
+        padding: 33px 0px 33px;
+        @media #{$md}{
+            padding: 0px 0px 20px;
+        } @media #{$xs}{
+            padding: 0px 0px 20px;
+        }
+    }
+    .footer-copy-right{
+        & p{
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 2;
+            margin: 0;
+            color: #9fa6bd;
+            & i{
+                color:$theme-color;
+            }
+            & a{
+                color: #ff2143;
+                &:hover{
+                   color: #ff2143;
+                }
+                 
+            }
+        }
+    }
+}
+

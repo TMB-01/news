@@ -1,0 +1,86 @@
+.team-area{
+    background: #f7f7f7;
+    .single-team{
+        .team-img{
+            overflow: hidden;
+            & img{
+                width: 100%;
+                transform:scale(1);
+                transition: all 0.6s ease-out 0s;
+            }
+        }
+        .team-caption{
+            padding: 20px 20px 20px 50px;
+            background: #fff;
+            & span{
+                color: #ff2143;
+                font-size: 14px;
+                font-weight: 300;
+                font-family:$font_1;
+                display: block;
+                position: relative;
+                margin-left: 50px;
+                margin-bottom: 10px;
+                &::before {
+                    position: absolute;
+                    content: "";
+                    width: 35px;
+                    height: 2px;
+                    left: -47px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background:#ff2143;
+                }
+            }
+            & h3{
+            a{
+                color: #161e46;
+                font-weight: 700;
+                font-size: 25px;
+            }
+            }
+        }
+    }
+}
+.single-team:hover .team-img img {
+	transform:scale(1.05);
+}
+
+.brand-area{
+    background:#f7f7f7;
+    .single-brand.slick-slide {
+        opacity: .7;
+    }
+}
+
+// About details
+.about-details{
+    .about-details-cap{
+        h4{
+            font-size: 30px;
+            font-family: $font_1;
+            font-weight: 700;
+            margin-bottom:30px;
+            color:#000a2d;
+            display: inline-block;
+            position: relative;
+            padding-left: 68px;
+
+            &::before{
+                position: absolute;
+                content: "";
+                width: 54px;
+                height: 2px;
+                background: #eb566c;
+                top: 0;
+                left:0px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+        p{
+            color: #464d65;
+            font-size: 14px;
+        }
+    }
+}
